@@ -1,2 +1,7 @@
 User-agent: *
 Allow: /
+
+# tier-B 양산 사이트 임시 격리 — 전용 도메인 연결 시 제거 (2026-07-07)
+Disallow: /the-korea-hub/
+Disallow: /the-korea-pulse/
+Disallow: /the-korea-wave/

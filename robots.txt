@@ -1,7 +1,7 @@
+# thishw.com = 허브 원페이지 전용 호스트.
+# 같은 계정의 project site(Pages 활성+자체 도메인 없음)는 자동으로 /<repo>/ 경로에 붙는다 —
+# 어떤 레포가 새로 붙어도 크롤되지 않도록 루트 페이지만 허용하고 전부 차단 (RFC 9309 longest-match).
+# 콘텐츠는 항상 서브도메인(insight.thishw.com 등)으로만 발행한다.
 User-agent: *
-Allow: /
-
-# tier-B 양산 사이트 임시 격리 — 전용 도메인 연결 시 제거 (2026-07-07)
-Disallow: /the-korea-hub/
-Disallow: /the-korea-pulse/
-Disallow: /the-korea-wave/
+Allow: /$
+Disallow: /
